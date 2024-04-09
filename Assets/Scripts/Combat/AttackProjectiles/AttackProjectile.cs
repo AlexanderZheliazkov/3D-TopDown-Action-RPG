@@ -10,7 +10,7 @@ public abstract class AttackProjectile : MonoBehaviour
     public AttackProjectileConfig AttackConfig;
 
     [SerializeField]
-    protected HitBox hitBoxPrefab;
+    protected HitBox hitbox;
 
     public static AttackProjectile SpawnAttackProjectile(AttackProjectile _projectile, AttackProjectileConfig _config, Vector3 _startPosition, Quaternion _startRotation)
     {
@@ -24,18 +24,6 @@ public abstract class AttackProjectile : MonoBehaviour
         return proj;
     }
 
-    protected HitBox SpawnHitbox(HitBox _hitBox, Vector3 _position, Quaternion _rotation)
-    {
-        if (_hitBox == null) return null;
-
-        var hitbox = Instantiate(_hitBox, _position, _rotation);
-        hitbox.AttackerStats = AttackConfig.AttackerStats;
-        hitbox.AttackDamageModifier = AttackConfig.AttackDamageModifier;
-        hitbox.TargetLayerMask = AttackConfig.TargetLayerMask;
-
-        return hitbox;
-    }
-
     [Serializable]
     public struct AttackProjectileConfig
     {
@@ -43,5 +31,13 @@ public abstract class AttackProjectile : MonoBehaviour
         public CharacterStats AttackerStats;
         public float AttackDamageModifier;
         public float AttackProjectileSpawnDelay;
+    }
+
+    protected abstract void SenderDestroyed();
+
+    protected virtual void Start()
+    {
+        hitbox.SetConfiguration(AttackConfig.AttackerStats, AttackConfig.AttackDamageModifier, AttackConfig.TargetLayerMask);
+        AttackConfig.AttackerStats.OnCharacterDied.AddListener(SenderDestroyed);
     }
 }

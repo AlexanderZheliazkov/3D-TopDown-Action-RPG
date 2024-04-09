@@ -5,10 +5,21 @@ using UnityEngine.Events;
 
 public class CharacterEquipment : MonoBehaviour
 {
+    [Header("Weapons")]
     [SerializeField]
     private Transform rightHandPlaceholder;
     [SerializeField]
     private Transform leftHandPlaceholder;
+
+    [Header("Equipment")]
+    [SerializeField]
+    private Equipment equipment;
+    [SerializeField]
+    private GameObject equipmentMeshRenderersParent;
+    [SerializeField]
+    private SkinnedMeshRenderer targetMesh;
+
+    private List<SkinnedMeshRenderer> equipmentMeshRenderers = new List<SkinnedMeshRenderer>();
 
     private GameObject rightHandItem;
     private GameObject leftHandItem;
@@ -34,6 +45,25 @@ public class CharacterEquipment : MonoBehaviour
                 Destroy(leftHandItem);
             }
             leftHandItem = Instantiate(_newWeapon.LeftHandPrefab, leftHandPlaceholder);
+        }
+    }
+
+    public void OnEquipmentChanged(Equipment _newEquipment)
+    {
+        if (equipment == null) return;
+
+        foreach (var meshRenderer in equipmentMeshRenderers)
+        {
+            Destroy(meshRenderer.gameObject);
+        }
+        equipmentMeshRenderers.Clear();
+
+        foreach (var meshRenderer in _newEquipment.skinnedMeshRenderers)
+        {
+            var newMesh = Instantiate(meshRenderer, equipmentMeshRenderersParent.transform);
+            newMesh.rootBone = targetMesh.rootBone;
+            newMesh.bones = targetMesh.bones;
+            equipmentMeshRenderers.Add(newMesh);
         }
     }
 }

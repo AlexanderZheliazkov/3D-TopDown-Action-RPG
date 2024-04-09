@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5779c334115f177449c860f69abe9b2b, type: 3}
+  m_Name: StarterClothes
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Description: 
+  HealthModifier: 0
+  ArmorModifier: 0
+  DamageModifier: 0
+  SpeedModifier: 0
+  skinnedMeshRenderers:
+  - {fileID: 3000786597401286695, guid: 41d1ef0e3acfc12438c38e72d5092e53, type: 3}
+  - {fileID: 2780710568495737856, guid: a9ada333a63a3aa42aa3d1b4d2582f88, type: 3}
+  - {fileID: 8443573644688418576, guid: 7c6dd7c150f62064aa19fc0dc9e1d122, type: 3}

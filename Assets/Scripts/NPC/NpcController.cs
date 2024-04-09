@@ -81,11 +81,13 @@ public class NpcController : MonoBehaviour
             return;
         }
 
+        float closestDistance = float.MaxValue;
         foreach (var potentialTarget in potentialTargets)
         {
-            float distance = float.MaxValue;
-            if (distance > Vector3.Distance(potentialTarget.transform.position, transform.position))
+            var distance = Vector3.Distance(potentialTarget.transform.position, transform.position);
+            if (closestDistance > distance)
             {
+                closestDistance = distance;
                 target = potentialTarget.transform;
             }
         }
@@ -183,8 +185,10 @@ public class NpcController : MonoBehaviour
     {
         //TODO: Advanced target chasing
 
-        movement.FaceTarget(target.position);
-        movement.MoveForward();
+        //movement.FaceTarget(target.position);
+        //movement.MoveForward();
+
+        movement.MoveToTarget(target.position);
 
         ////Cast ray to targer location
         //var ray = new Ray(transform.position, CalculateRotationToTarget());

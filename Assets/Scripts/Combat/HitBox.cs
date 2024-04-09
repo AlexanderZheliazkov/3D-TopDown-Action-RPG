@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static AttackProjectile;
 
 [RequireComponent(typeof(Rigidbody))]
 public class HitBox : MonoBehaviour
@@ -11,6 +12,13 @@ public class HitBox : MonoBehaviour
     public CharacterStats AttackerStats;
     [HideInInspector]
     public float AttackDamageModifier;
+
+    public void SetConfiguration(CharacterStats _attackerStats, float _damageModifier, LayerMask _targerLayerMask)
+    {
+        AttackerStats = _attackerStats;
+        AttackDamageModifier = _damageModifier;
+        TargetLayerMask = _targerLayerMask;
+    }
 
     protected virtual void ApplyDamage(Collider _target)
     {

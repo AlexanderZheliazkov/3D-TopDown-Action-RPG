@@ -90,16 +90,16 @@ public class NpcMovement : MovementBehaviour
         isFreezed = false;
     }
 
-    public void FaceTarget(Vector3 targetPosition)
+    public override void FaceTarget(Vector3 _targetPosition)
     {
         if (isFreezed) return;
 
-        Vector3 direction = (targetPosition - agent.transform.position).normalized;
+        Vector3 direction = (_targetPosition - agent.transform.position).normalized;
         Quaternion LookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, LookRotation, rotationLerp);
     }
 
-    public void SetLookRotation(Vector3 _targerRotation)
+    public override void SetLookRotation(Vector3 _targerRotation)
     {
         if (isFreezed) return;
 

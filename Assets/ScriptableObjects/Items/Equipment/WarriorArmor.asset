@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5779c334115f177449c860f69abe9b2b, type: 3}
+  m_Name: WarriorArmor
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Description: 
+  HealthModifier: 0
+  ArmorModifier: 0
+  DamageModifier: 0
+  SpeedModifier: 0
+  skinnedMeshRenderers:
+  - {fileID: 3291856004056726155, guid: d3d53499e31729c43a6a03a333a5dfd6, type: 3}
+  - {fileID: 5205448094747182237, guid: 8dd5f2392365e5d40b067fc21fdc9414, type: 3}
+  - {fileID: 764330426062381243, guid: 9ea1677ae47dd264395da70beb84a1f3, type: 3}
+  - {fileID: 596998482443246005, guid: 4939b7576f956c946a9d89cf8e46f055, type: 3}
+  - {fileID: 2464834209242362940, guid: aa9e3910647eb3f46a1ced3c3aaa2390, type: 3}

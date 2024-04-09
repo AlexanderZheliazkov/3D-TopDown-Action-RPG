@@ -11,13 +11,12 @@ public class RangedProjectile : AttackProjectile
     [SerializeField]
     protected UnityEvent onHitboxEnabled;
     [SerializeField]
-    private GameObject projectileObject;
+    protected UnityEvent onSenderDestroy;
 
     IEnumerator SpawnProjectileCoroutine()
     {
         yield return new WaitForSeconds(AttackConfig.AttackProjectileSpawnDelay);
 
-        projectileObject.gameObject.SetActive(true);
         onProjectileSpawned.Invoke();
     }
 
@@ -25,15 +24,18 @@ public class RangedProjectile : AttackProjectile
     {
         if ((AttackConfig.TargetLayerMask.value & (1 << _other.gameObject.layer)) != 0)
         {
-            SpawnHitbox(hitBoxPrefab, projectileObject.transform.position, projectileObject.transform.rotation);
             onHitboxEnabled.Invoke();
-            Destroy(projectileObject.gameObject);
         }
     }
-
-    private void Start()
+    protected override void SenderDestroyed()
     {
-        projectileObject.gameObject.SetActive(false);
+        onSenderDestroy.Invoke();
+    }
+
+    protected override void Start()
+    {
+        base.Start();
         StartCoroutine(SpawnProjectileCoroutine());
     }
+
 }
