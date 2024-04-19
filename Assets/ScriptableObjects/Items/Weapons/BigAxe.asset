@@ -51,9 +51,9 @@ MonoBehaviour:
     projectiles:
     - {fileID: 3913559466206057468, guid: e27de64434b8f344987d72d194213f3f, type: 3}
     damageModifier: 1
-    AttackDurationTime: 0.65
-    FreezeMovementTime: 0.7
+    AttackDurationTime: 1.2
+    FreezeMovementTime: 0.8
     AttackComboResetTime: 1.5
-    attackProjectileSpawnDelay: 0.5
+    attackProjectileSpawnDelay: 0.6
   RightHandPrefab: {fileID: 0}
   LeftHandPrefab: {fileID: 0}

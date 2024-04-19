@@ -48,17 +48,17 @@ public class PlayerMovement : MovementBehaviour
             Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref turnSmoothVelocity, SmoothRotationTime);
     }
 
-    public override void FaceTarget(Vector3 targetPosition)
+    public override void FaceTarget(Vector3 _targetPosition)
     {
-        Vector3 direction = (targetPosition - agent.transform.position).normalized;
-        Quaternion LookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, LookRotation, 1 - SmoothRotationTime);
+        Vector3 direction = (_targetPosition - agent.transform.position).normalized;
+        var lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, lookRotation, 1 - SmoothRotationTime);
     }
 
     public override void SetLookRotation(Vector3 _targerRotation)
     {
-        Quaternion LookRotation = Quaternion.LookRotation(new Vector3(_targerRotation.x, 0, _targerRotation.z));
-        agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, LookRotation, 1 - SmoothRotationTime);
+        var lookRotation = Quaternion.LookRotation(new Vector3(_targerRotation.x, 0, _targerRotation.z));
+        agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, lookRotation, 1 - SmoothRotationTime);
     }
 
     private void Update()

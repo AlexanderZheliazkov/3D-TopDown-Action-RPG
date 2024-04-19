@@ -5,13 +5,11 @@ using System.Collections.Generic;
 
 public class CombatBehaviour : MonoBehaviour
 {
-    [Header("Requred Components")]
-    [SerializeField]
+    [Header("Required Components")] [SerializeField]
     protected CharacterStats stats;
-    [SerializeField]
+
     public MovementBehaviour Movement;
-    [Space(10)]
-    public UnityEvent<Attack> OnAttackEvent;
+    [Space(10)] public UnityEvent<Attack> OnAttackEvent;
     public UnityEvent<Attack, Attack> OnAttackEnd;
     public UnityEvent OnComboDone;
 
@@ -36,6 +34,7 @@ public class CombatBehaviour : MonoBehaviour
         {
             StopCoroutine(handleCharacterMovementCoroutine);
         }
+
         handleCharacterMovementCoroutine = StartCoroutine(HandleCharacterMovement(curAttack));
 
         //handle attacking state
@@ -43,6 +42,7 @@ public class CombatBehaviour : MonoBehaviour
         {
             StopCoroutine(handleCharacterAttackStateCoroutine);
         }
+
         handleCharacterAttackStateCoroutine = StartCoroutine(HandleCharacterAttackState(curAttack));
 
         //handle attack combo 
@@ -50,8 +50,8 @@ public class CombatBehaviour : MonoBehaviour
         {
             StopCoroutine(handleAttackComboCoroutine);
         }
-        handleAttackComboCoroutine = StartCoroutine(HandleAttackComboCoroutine(curAttack));
 
+        handleAttackComboCoroutine = StartCoroutine(HandleAttackComboCoroutine(curAttack));
     }
 
     protected virtual IEnumerator HandleAttackComboCoroutine(Attack _attack)
@@ -75,6 +75,7 @@ public class CombatBehaviour : MonoBehaviour
         {
             ResetCombo();
         }
+
         OnAttackEnd.Invoke(_attack, attacks[currentAttackIndex]);
 
         isAttacking = false;
@@ -84,7 +85,6 @@ public class CombatBehaviour : MonoBehaviour
     {
         Movement.DisableMovement();
         yield return new WaitForSeconds(_attack.FreezeMovementTime);
-        //yield return new WaitForEndOfFrame();
         Movement.EnableMovement();
     }
 
@@ -102,6 +102,5 @@ public class CombatBehaviour : MonoBehaviour
 
     protected virtual void Start()
     {
-
     }
 }

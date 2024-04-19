@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,65 +6,50 @@ using UnityEngine.Events;
 
 public class CharacterEquipment : MonoBehaviour
 {
-    [Header("Weapons")]
-    [SerializeField]
-    private Transform rightHandPlaceholder;
-    [SerializeField]
-    private Transform leftHandPlaceholder;
+    [SerializeField] private EquipedItemsSetSO currentEquipment;
 
-    [Header("Equipment")]
-    [SerializeField]
-    private Equipment equipment;
-    [SerializeField]
-    private GameObject equipmentMeshRenderersParent;
-    [SerializeField]
-    private SkinnedMeshRenderer targetMesh;
+    private Weapon selectedWeapon;
+    private Armor selectedArmor;
 
-    private List<SkinnedMeshRenderer> equipmentMeshRenderers = new List<SkinnedMeshRenderer>();
+    public UnityEvent<Weapon> OnWeaponChanged;
+    public UnityEvent<Armor> OnEquipmentChanged;
 
-    private GameObject rightHandItem;
-    private GameObject leftHandItem;
-
-    public void ChangeWeapon(Weapon _newWeapon)
+    public void SelectWeapon(Weapon _newWeapon)
     {
         if (_newWeapon == null)
+        {
+            Debug.LogWarning("Weapon is null!");
             return;
-
-        if (_newWeapon.RightHandPrefab != null)
-        {
-            if (rightHandItem != null)
-            {
-                Destroy(rightHandItem);
-            }
-            rightHandItem = Instantiate(_newWeapon.RightHandPrefab, rightHandPlaceholder);
         }
 
-        if (_newWeapon.LeftHandPrefab != null)
-        {
-            if (leftHandItem != null)
-            {
-                Destroy(leftHandItem);
-            }
-            leftHandItem = Instantiate(_newWeapon.LeftHandPrefab, leftHandPlaceholder);
-        }
+        selectedWeapon = _newWeapon;
+        OnWeaponChanged.Invoke(_newWeapon);
     }
 
-    public void OnEquipmentChanged(Equipment _newEquipment)
+    public void SelectArmor(Armor _newEquipment)
     {
-        if (equipment == null) return;
-
-        foreach (var meshRenderer in equipmentMeshRenderers)
+        if (_newEquipment == null)
         {
-            Destroy(meshRenderer.gameObject);
+            Debug.LogWarning("Equipment is null!");
+            return;
         }
-        equipmentMeshRenderers.Clear();
 
-        foreach (var meshRenderer in _newEquipment.skinnedMeshRenderers)
-        {
-            var newMesh = Instantiate(meshRenderer, equipmentMeshRenderersParent.transform);
-            newMesh.rootBone = targetMesh.rootBone;
-            newMesh.bones = targetMesh.bones;
-            equipmentMeshRenderers.Add(newMesh);
-        }
+        selectedArmor = _newEquipment;
+        OnEquipmentChanged.Invoke(_newEquipment);
+    }
+
+    private void Start()
+    {
+        SelectWeapon(currentEquipment.GetWeapon());
+        SelectArmor(currentEquipment.GetArmor());
+
+        currentEquipment.OnWeaponChanged.AddListener(SelectWeapon);
+        currentEquipment.OnArmorChanged.AddListener(SelectArmor);
+    }
+
+    private void OnDestroy()
+    {
+        currentEquipment.OnWeaponChanged.RemoveListener(SelectWeapon);
+        currentEquipment.OnArmorChanged.RemoveListener(SelectArmor);
     }
 }

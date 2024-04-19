@@ -6,10 +6,8 @@ using UnityEngine.Events;
 
 public class PlayerCombat : CombatBehaviour
 {
-    [SerializeField]
-    private Vector3Variable targerPosition;
-    [SerializeField]
-    private float minLookRotationDot = 0.99f;
+    [SerializeField] private Vector3Variable targerPosition;
+    [SerializeField] private float minLookRotationDot = 0.99f;
 
     private Coroutine attackCoroutine = null;
 
@@ -20,7 +18,7 @@ public class PlayerCombat : CombatBehaviour
 
     public override void Attack()
     {
-        if (attackCoroutine == null)
+        if (attackCoroutine == null && !base.isAttacking)
         {
             attackCoroutine = StartCoroutine(AttackCoroutine());
         }
@@ -43,6 +41,8 @@ public class PlayerCombat : CombatBehaviour
             //wait until facing desired position
             yield return new WaitUntil(() =>
             {
+                if (targerPosition.Value == Vector3.zero) return true;
+
                 Vector3 desiredRotation = targerPosition.Value - transform.position;
                 base.Movement.SetLookRotation(desiredRotation.normalized);
 

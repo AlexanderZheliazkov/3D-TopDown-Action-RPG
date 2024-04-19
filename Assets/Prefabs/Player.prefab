@@ -1027,7 +1027,7 @@ GameObject:
   - component: {fileID: 6614090336478030524}
   - component: {fileID: 5715052363997284258}
   m_Layer: 6
-  m_Name: Inventory
+  m_Name: CharacterEquipment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,8 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ddc02f789032e49a9612fab5deaaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestWeapon: {fileID: 11400000, guid: 138138c66f648ad4baf1d233390bd4f6, type: 2}
-  TestEquipment: {fileID: 11400000, guid: b1cf781f403711f45b98746f4ccc775c, type: 2}
+  currentEquipment: {fileID: 11400000, guid: 68c4c6847aee3514580039e596449535, type: 2}
   OnWeaponChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1089,8 +1088,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7035795946292878681}
-        m_TargetAssemblyTypeName: CharacterEquipment, Assembly-CSharp
+      - m_Target: {fileID: 1240768713272045463}
+        m_TargetAssemblyTypeName: EquipmentDisplay, Assembly-CSharp
         m_MethodName: ChangeWeapon
         m_Mode: 0
         m_Arguments:
@@ -1104,9 +1103,9 @@ MonoBehaviour:
   OnEquipmentChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7035795946292878681}
-        m_TargetAssemblyTypeName: CharacterEquipment, Assembly-CSharp
-        m_MethodName: OnEquipmentChanged
+      - m_Target: {fileID: 1240768713272045463}
+        m_TargetAssemblyTypeName: EquipmentDisplay, Assembly-CSharp
+        m_MethodName: OnArmorChanged
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2269,9 +2268,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 472356813223082544}
   moveInput: {fileID: 11400000, guid: 3971dbe48d956374abf1f5bf633cff0e, type: 2}
-  inputDelay: 0.1
-  minDotRotationForMoving: 0.5
-  smoothRotationTime: 0.1
+  inputDelay: 0.025
+  minDotRotationForMoving: 0.1
+  SmoothRotationTime: 0.025
   playerPosition: {fileID: 11400000, guid: 050511c5448106d418ba4c020382030d, type: 2}
   cameraRotation: {fileID: 11400000, guid: 225d3a5fb9b5c7f469a4d05a7abe5217, type: 2}
 --- !u!1 &7928783051840906057
@@ -2438,9 +2437,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2098998221574789715}
-  - component: {fileID: 7035795946292878681}
+  - component: {fileID: 1240768713272045463}
   m_Layer: 6
-  m_Name: CharacterEquipment
+  m_Name: EquipmentDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2461,7 +2460,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8044774889241159730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7035795946292878681
+--- !u!114 &1240768713272045463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2475,7 +2474,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightHandPlaceholder: {fileID: 6445554850639812647}
   leftHandPlaceholder: {fileID: 3681661745393302153}
-  equipment: {fileID: 11400000, guid: b1cf781f403711f45b98746f4ccc775c, type: 2}
   equipmentMeshRenderersParent: {fileID: 695936933819400627}
   targetMesh: {fileID: 2033122857019425640}
 --- !u!1 &8849370809560646829
