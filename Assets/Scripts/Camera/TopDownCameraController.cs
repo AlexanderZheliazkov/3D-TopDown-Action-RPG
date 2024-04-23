@@ -10,15 +10,15 @@ public class TopDownCameraController : MonoBehaviour
 
     [SerializeField]
     private Vector3 offset;
+
     [SerializeField]
     private Camera cam;
 
     void Start()
     {
-
     }
 
-    void Update()
+    private void Update()
     {
         if (transform.position != PlayerPosition.Value)
         {
@@ -29,8 +29,9 @@ public class TopDownCameraController : MonoBehaviour
 
         if (CameraRotation.Value != transform.rotation)
         {
-            CameraRotation.Value = transform.rotation;
+            CameraRotation.Value = cam.transform.rotation;
         }
+
         if (CameraPosition.Value != cam.transform.position)
         {
             CameraPosition.Value = cam.transform.position;

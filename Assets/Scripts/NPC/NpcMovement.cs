@@ -99,11 +99,11 @@ public class NpcMovement : MovementBehaviour
         agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, LookRotation, rotationLerp);
     }
 
-    public override void SetLookRotation(Vector3 _targerRotation)
+    public override void SetLookRotation(Vector3 _targetRotation)
     {
         if (isFreezed) return;
 
-        Quaternion LookRotation = Quaternion.LookRotation(new Vector3(_targerRotation.x, 0, _targerRotation.z));
+        Quaternion LookRotation = Quaternion.LookRotation(new Vector3(_targetRotation.x, 0, _targetRotation.z));
         agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, LookRotation, rotationLerp);
     }
 

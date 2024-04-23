@@ -1940,7 +1940,7 @@ MonoBehaviour:
   OnComboDone:
     m_PersistentCalls:
       m_Calls: []
-  targerPosition: {fileID: 11400000, guid: 17727c0f7a1e29c44b0550868429a279, type: 2}
+  targetPosition: {fileID: 11400000, guid: 17727c0f7a1e29c44b0550868429a279, type: 2}
   minLookRotationDot: 0.999
 --- !u!114 &6262128661140739191
 MonoBehaviour:
@@ -2270,9 +2270,9 @@ MonoBehaviour:
   moveInput: {fileID: 11400000, guid: 3971dbe48d956374abf1f5bf633cff0e, type: 2}
   inputDelay: 0.025
   minDotRotationForMoving: 0.1
-  SmoothRotationTime: 0.025
   playerPosition: {fileID: 11400000, guid: 050511c5448106d418ba4c020382030d, type: 2}
   cameraRotation: {fileID: 11400000, guid: 225d3a5fb9b5c7f469a4d05a7abe5217, type: 2}
+  SmoothRotationTime: 0.025
 --- !u!1 &7928783051840906057
 GameObject:
   m_ObjectHideFlags: 0

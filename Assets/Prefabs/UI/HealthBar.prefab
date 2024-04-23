@@ -146,6 +146,7 @@ MonoBehaviour:
   healthSlider: {fileID: 3197455840950709576}
   vfxSlider: {fileID: 8727123422967629602}
   cameraRotation: {fileID: 11400000, guid: 225d3a5fb9b5c7f469a4d05a7abe5217, type: 2}
+  cameraPosition: {fileID: 11400000, guid: 90656d9ef62da6e41a6e17e427fcf444, type: 2}
   smoothVfxSlider: 0.5
 --- !u!1 &4342995296422984730
 GameObject:

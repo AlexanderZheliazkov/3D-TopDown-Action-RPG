@@ -3,13 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DropLootComponent : Interactable
+public class DropLootComponent : MonoBehaviour
 {
-    public UnityEvent onInteract;
-
-    public override bool Interact()
-    {
-        onInteract.Invoke();
-        return true;
-    }
+    //todo
 }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class PlayerCombat : CombatBehaviour
 {
-    [SerializeField] private Vector3Variable targerPosition;
+    [SerializeField] private Vector3Variable targetPosition;
     [SerializeField] private float minLookRotationDot = 0.99f;
 
     private Coroutine attackCoroutine = null;
@@ -24,32 +25,29 @@ public class PlayerCombat : CombatBehaviour
         }
     }
 
-    protected IEnumerator AttackCoroutine()
+    private IEnumerator AttackCoroutine()
     {
-        yield return StartCoroutine(RotateTowardTargerCoroutine());
+        yield return StartCoroutine(RotateTowardTargetCoroutine());
 
         base.Attack();
         attackCoroutine = null;
     }
 
-    private IEnumerator RotateTowardTargerCoroutine()
+    private IEnumerator RotateTowardTargetCoroutine()
     {
-        if (targerPosition && targerPosition.Value != Vector3.zero)
+        if (targetPosition && targetPosition.Value != Vector3.zero)
         {
             base.Movement.DisableMovement();
 
             //wait until facing desired position
             yield return new WaitUntil(() =>
             {
-                if (targerPosition.Value == Vector3.zero) return true;
+                if (targetPosition.Value == Vector3.zero) return true;
 
-                Vector3 desiredRotation = targerPosition.Value - transform.position;
+                var desiredRotation = targetPosition.Value - transform.position;
                 base.Movement.SetLookRotation(desiredRotation.normalized);
 
-                if (Vector3.Dot(transform.forward, desiredRotation.normalized) >= minLookRotationDot)
-                    return true;
-                else
-                    return false;
+                return Vector3.Dot(transform.forward, desiredRotation.normalized) >= minLookRotationDot;
             });
         }
     }

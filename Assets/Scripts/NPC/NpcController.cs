@@ -9,7 +9,7 @@ using UnityEngine.Assertions.Must;
 
 public class NpcController : MonoBehaviour
 {
-    public const float MIN_DOT_FOR_FACING_TARGET = 0.9f;
+    public const int MAX_SEARCHING_TARGETS_COUNT = 16;
 
     public enum CombatState
     {
@@ -21,35 +21,33 @@ public class NpcController : MonoBehaviour
     public CombatState CurrentCombatState { get; private set; } = CombatState.Idle;
     public Action<CombatState, CombatState> OnStateChanged;
 
-    [SerializeField]
-    private NpcMovement movement;
-    [SerializeField]
-    private CombatBehaviour combat;
-
-    [SerializeField]
-    private float searchTargetInterval = 0.1f;
+    [SerializeField] private NpcMovement movement;
+    [SerializeField] private CombatBehaviour combat;
+    [SerializeField] private float searchTargetInterval = 0.1f;
     private float searchTargetTimer;
 
-    [SerializeField]
-    private LayerMask hostileTargetsMask;
+    [SerializeField] private LayerMask hostileTargetsMask;
 
-    [Header("Comabat State Params")]
-    [SerializeField]
-    private float searchForTargetRange;
-    [SerializeField]
-    private float attackRange;
-    [SerializeField]
-    private Vector2 routingRangeMinMax;
-    [SerializeField]
-    private Vector2 routingTimeMinMax;
+    [Header("Combat State Params")]
+    [SerializeField] private float searchForTargetRange;
+
+    [SerializeField] private float attackRange;
+    [SerializeField] private bool firstSightRouting = false;
+    [SerializeField] private Vector2 routingRangeMinMax;
+    [SerializeField] private Vector2 routingTimeMinMax;
     private float routingTimer = 0;
+
     [SerializeField]
     private Vector2 changeRoutingDirTimeMinMax;
+
     private float changeRoutingDirTimer = 0;
+
     [SerializeField]
     private float maxDistanceFromMainPos;
+
     [SerializeField]
     private float minDeltaDistanceFromMainPos;
+
     /// <summary>
     /// Dot product of facing direction and target direction
     /// </summary>
@@ -58,33 +56,38 @@ public class NpcController : MonoBehaviour
 
     private RoutingDirection routingDirection;
 
-    private Transform target;
+    private Transform target = null;
 
     private Vector3 mainPosition;
     private Vector3 lastPosition;
 
     private void ChangeCombatState(CombatState _newState)
     {
-        //if (CurrentCombatState != _newState)
-        //    Debug.Log($"{CurrentCombatState} | {_newState}");
         OnStateChanged?.Invoke(CurrentCombatState, _newState);
         CurrentCombatState = _newState;
     }
 
-    private void SearchForTarger()
+    private void SearchForTarget()
     {
-        var potentialTargets = Physics.OverlapSphere(transform.position, searchForTargetRange, hostileTargetsMask);
+        // var potentialTargets = Physics.OverlapSphere(transform.position, searchForTargetRange, hostileTargetsMask);
+        var foundColliders = new Collider[MAX_SEARCHING_TARGETS_COUNT];
+        var size = Physics.OverlapSphereNonAlloc(transform.position, searchForTargetRange, foundColliders,
+            hostileTargetsMask);
 
-        if (potentialTargets.Length <= 0)
+        if (size <= 0)
         {
             target = null;
+            ChangeCombatState(CombatState.Idle);
             return;
         }
 
-        float closestDistance = float.MaxValue;
-        foreach (var potentialTarget in potentialTargets)
+        var closestDistance = float.MaxValue;
+
+        for (var i = 0; i < size; i++)
         {
+            var potentialTarget = foundColliders[i];
             var distance = Vector3.Distance(potentialTarget.transform.position, transform.position);
+
             if (closestDistance > distance)
             {
                 closestDistance = distance;
@@ -112,6 +115,7 @@ public class NpcController : MonoBehaviour
     }
 
     #region StanceLogic
+
     protected virtual void IdleStateHandle()
     {
         var distanceToMain = Vector3.Distance(transform.position, mainPosition);
@@ -126,18 +130,12 @@ public class NpcController : MonoBehaviour
 
         if (target != null)
         {
-            StartRouting();
+            ChangeCombatState(firstSightRouting ? CombatState.Routing : CombatState.Attacking);
         }
     }
 
     protected virtual void AttackStateHandle()
     {
-        if (target == null)
-        {
-            ChangeCombatState(CombatState.Idle);
-            return;
-        }
-
         var distanceToTarget = Vector3.Distance(transform.position, target.position);
         if (distanceToTarget <= attackRange)
         {
@@ -151,12 +149,6 @@ public class NpcController : MonoBehaviour
 
     protected virtual void RoutingStateHandle()
     {
-        if (target == null)
-        {
-            ChangeCombatState(CombatState.Idle);
-            return;
-        }
-
         var distanceToTarget = Vector3.Distance(transform.position, target.position);
         if (distanceToTarget < routingRangeMinMax.x)
         {
@@ -201,7 +193,6 @@ public class NpcController : MonoBehaviour
         //    movement.FaceTarget(target.position);
         //    movement.MoveForward();
         //}
-
     }
 
     protected virtual void Attacking()
@@ -227,6 +218,7 @@ public class NpcController : MonoBehaviour
         {
             movement.SetLookRotation(desiredRot);
         }
+
         movement.MoveForward();
     }
 
@@ -237,9 +229,11 @@ public class NpcController : MonoBehaviour
 
         if (changeRoutingDirTimer <= 0)
         {
-            changeRoutingDirTimer = UnityEngine.Random.Range(changeRoutingDirTimeMinMax.x, changeRoutingDirTimeMinMax.y);
+            changeRoutingDirTimer =
+                UnityEngine.Random.Range(changeRoutingDirTimeMinMax.x, changeRoutingDirTimeMinMax.y);
             routingDirection = (UnityEngine.Random.value > 0.5f) ? RoutingDirection.Right : RoutingDirection.Left;
         }
+
         switch (routingDirection)
         {
             case RoutingDirection.Left:
@@ -260,6 +254,7 @@ public class NpcController : MonoBehaviour
 
         changeRoutingDirTimer -= Time.deltaTime;
     }
+
     #endregion
 
 
@@ -285,6 +280,8 @@ public class NpcController : MonoBehaviour
 
     protected void Start()
     {
+        ChangeCombatState(CombatState.Idle);
+
         mainPosition = transform.position;
         searchTargetTimer = searchTargetInterval;
 
@@ -300,19 +297,15 @@ public class NpcController : MonoBehaviour
     {
         if (searchTargetTimer <= 0)
         {
-            SearchForTarger();
+            SearchForTarget();
             searchTargetTimer = searchTargetInterval;
         }
         else
         {
             searchTargetTimer -= Time.deltaTime;
         }
-        HandleCombatStance();
 
-        if (target != null)
-        {
-            Debug.DrawRay(transform.position, CalculateRotationToTarget(), Color.blue);
-        }
+        HandleCombatStance();
     }
 
     public enum RoutingDirection

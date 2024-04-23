@@ -5071,6 +5071,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4305055621210385221, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: OnComboDone.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305055621210385221, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: OnComboDone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2106925247}
+    - target: {fileID: 4305055621210385221, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: OnComboDone.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4454305037080944241, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_Name
@@ -39657,25 +39672,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Logic
       objectReference: {fileID: 0}
-    - target: {fileID: 5867537219903331367, guid: c9ca5c79053253b418e8c64be6857c69,
-        type: 3}
-      propertyPath: showMouse
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8240614334360278479, guid: c9ca5c79053253b418e8c64be6857c69,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.2080126
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8240614334360278479, guid: c9ca5c79053253b418e8c64be6857c69,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.0114756
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8240614334360278479, guid: c9ca5c79053253b418e8c64be6857c69,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.880997
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8240614334360278479, guid: c9ca5c79053253b418e8c64be6857c69,
         type: 3}
@@ -68012,6 +68022,12 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: bb4d9695371e4244abd65fbd3c4a404a, type: 2}
   m_BuildHeightMesh: 0
+--- !u!1 &2106925247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6029421834363822143, guid: ab25e34e838f1ab40826129c1f110ef3,
+    type: 3}
+  m_PrefabInstance: {fileID: 160893295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2110502091
 Mesh:
   m_ObjectHideFlags: 0
