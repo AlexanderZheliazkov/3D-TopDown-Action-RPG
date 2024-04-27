@@ -18,8 +18,10 @@ public class AnimationController : MonoBehaviour
 
     [SerializeField]
     private NavMeshAgent navMeshAgent;
+
     [SerializeField]
     private Animator anim;
+
     [SerializeField]
     private MovementAnimationSet baseMovementAnimSet;
 
@@ -34,8 +36,11 @@ public class AnimationController : MonoBehaviour
             Debug.LogError("MissingAttackAnimation!");
             return;
         }
+
         anim.SetBool("UseBonusAttackState", !useBonusAttackState);
         useBonusAttackState = anim.GetBool("UseBonusAttackState");
+
+        anim.SetFloat("AttackSpeedMultiplayer", _attack.AnimationSpeedModifier);
 
         if (!useBonusAttackState)
         {
@@ -45,6 +50,7 @@ public class AnimationController : MonoBehaviour
         {
             overrideController[BASE_ATTACK2_ANIMATION_CLIP_NAME] = _attack.AttackAnimation;
         }
+
         anim.SetTrigger("AttackTrigger");
     }
 
@@ -61,6 +67,11 @@ public class AnimationController : MonoBehaviour
 
         overrideController[BASE_IDLE_ANIMATION_CLIP_NAME] = currentMovementAnimationSet.Idle;
         overrideController[BASE_RUN_ANIMATION_CLIP_NAME] = currentMovementAnimationSet.Run;
+    }
+
+    public void SetIsAttacking(bool _isAttacking)
+    {
+        anim.SetBool("IsAttacking", _isAttacking);
     }
 
     protected virtual void Awake()

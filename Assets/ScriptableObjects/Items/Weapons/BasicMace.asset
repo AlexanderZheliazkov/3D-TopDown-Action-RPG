@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d79c7984ea0e741b1552907705b01c, type: 3}
+  m_Name: BasicMace
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Description: 
+  HealthModifier: 0
+  DefenceModifier: 0
+  DamageModifier: 0
+  SpeedModifier: 0
+  MovementAnimations: {fileID: 11400000, guid: 8f678d7c1bc28914d9dcb1420f61331c, type: 2}
+  Attacks:
+  - AttackAnimation: {fileID: 6773342385965168362, guid: 6ff2bbe07facf7449ae00b5551565008,
+      type: 3}
+    TargetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    projectiles:
+    - {fileID: 3913559466206057468, guid: bcb75318e95a4994180b27cbcbdc760e, type: 3}
+    damageModifier: 1
+    AttackDurationTime: 0.6
+    FreezeMovementTime: 0.62
+    AttackComboResetTime: 1.5
+    attackProjectileSpawnDelay: 0.4
+  - AttackAnimation: {fileID: 6773342385965168362, guid: 6ff2bbe07facf7449ae00b5551565008,
+      type: 3}
+    TargetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    projectiles:
+    - {fileID: 3913559466206057468, guid: bcb75318e95a4994180b27cbcbdc760e, type: 3}
+    damageModifier: 1
+    AttackDurationTime: 0.6
+    FreezeMovementTime: 0.62
+    AttackComboResetTime: 1.5
+    attackProjectileSpawnDelay: 0.4
+  - AttackAnimation: {fileID: 6773342385965168362, guid: 6ff2bbe07facf7449ae00b5551565008,
+      type: 3}
+    TargetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    projectiles:
+    - {fileID: 3913559466206057468, guid: 7e90c0848462f6d41a7b349f392cc089, type: 3}
+    damageModifier: 1.2
+    AttackDurationTime: 1.2
+    FreezeMovementTime: 0.75
+    AttackComboResetTime: 1.5
+    attackProjectileSpawnDelay: 0.6
+  RightHandPrefab: {fileID: 0}
+  LeftHandPrefab: {fileID: 0}

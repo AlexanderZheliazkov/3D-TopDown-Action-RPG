@@ -1376,6 +1376,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1361238382}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -1390,7 +1400,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1415,6 +1425,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -3353,6 +3373,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3417,7 +3447,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -3442,6 +3472,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5091,6 +5131,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5155,7 +5205,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -5180,6 +5230,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7350,7 +7410,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 3258176096218504985, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -7386,12 +7446,32 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8291,6 +8371,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8355,7 +8445,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -8380,6 +8470,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13231,99 +13331,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &358587200
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4462352784216365693, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: targetIndicator
-      value: 
-      objectReference: {fileID: 1823838591}
-    - target: {fileID: 4859555534363881037, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4859555534363881037, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8044774889241159730, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8055960567655542012, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8055960567655542012, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9047475426450264655, guid: b959ddcfa434a0344ab46414cc7abefa,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b959ddcfa434a0344ab46414cc7abefa, type: 3}
 --- !u!4 &367478901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
@@ -15610,7 +15617,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 3258176096218504985, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -15646,12 +15653,32 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -15865,6 +15892,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15929,7 +15966,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -15954,6 +15991,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22045,6 +22092,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1361238382}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -22059,7 +22116,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -22084,6 +22141,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -24545,6 +24612,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 690322269}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -24559,7 +24636,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -24584,6 +24661,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -25410,6 +25497,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25474,7 +25571,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -25504,6 +25601,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26934,6 +27041,99 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 1a97405a1fa20d24eb736ba22b30f5bd, type: 2}
   m_BuildHeightMesh: 0
+--- !u!1001 &811820736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4462352784216365693, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: targetIndicator
+      value: 
+      objectReference: {fileID: 1823838591}
+    - target: {fileID: 4859555534363881037, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859555534363881037, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044774889241159730, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055960567655542012, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055960567655542012, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047475426450264655, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bc75eda85ed910a468e02dd26338fa31, type: 3}
 --- !u!43 &813025956
 Mesh:
   m_ObjectHideFlags: 0
@@ -30982,6 +31182,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31046,7 +31256,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -31071,6 +31281,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33968,6 +34188,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 175545647}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -33982,7 +34212,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -34007,6 +34237,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -35569,7 +35809,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 3258176096218504985, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -35605,12 +35845,32 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -38013,6 +38273,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1361238382}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -38027,7 +38297,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -38052,6 +38322,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -39177,6 +39457,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1361238382}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -39191,7 +39481,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -39216,6 +39506,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -39968,6 +40268,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1361238382}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -39982,7 +40292,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -40007,6 +40317,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -40953,6 +41273,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 175545647}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -40967,7 +41297,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -40992,6 +41322,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -44000,7 +44340,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 3258176096218504985, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -44036,12 +44376,32 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -44521,6 +44881,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44585,7 +44955,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -44610,6 +44980,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46419,6 +46799,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46483,7 +46873,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -46508,6 +46898,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49711,6 +50111,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1361238382}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -49725,7 +50135,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -49750,6 +50160,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -50226,6 +50646,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50290,7 +50720,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -50315,6 +50745,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52259,6 +52699,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 175545647}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -52273,7 +52723,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -52298,6 +52748,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -54558,6 +55018,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1935439963}
     m_Modifications:
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107683565590115987, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.size
@@ -54572,7 +55042,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 2710638572701473209, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -54597,6 +55067,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297348334800745506, guid: cf80c4de2f1e207439e9c7090a635364,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316777882524622952, guid: cf80c4de2f1e207439e9c7090a635364,
         type: 3}
@@ -62555,18 +63035,6 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 9c72814b3d4404a43a5a3b87e46b93f6, type: 2}
   m_BuildHeightMesh: 0
---- !u!114 &1903931844 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4651000712059452823, guid: b959ddcfa434a0344ab46414cc7abefa,
-    type: 3}
-  m_PrefabInstance: {fileID: 358587200}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eebe159c55d84cc47b48358f35879dbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1913837205
 GameObject:
   m_ObjectHideFlags: 0
@@ -63312,6 +63780,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63360,6 +63838,16 @@ PrefabInstance:
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -65899,6 +66387,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65963,7 +66461,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -65988,6 +66486,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66032,6 +66540,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestMeleeSwordEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
@@ -66097,7 +66615,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -66122,6 +66640,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66523,6 +67051,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestMeleeSwordEnemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191982877737080332, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8203349790314626874, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66587,7 +67125,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1903931844}
+      objectReference: {fileID: 0}
     - target: {fileID: 8618085190088016277, guid: ab25e34e838f1ab40826129c1f110ef3,
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -66612,6 +67150,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnCharacterDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742136585781417149, guid: ab25e34e838f1ab40826129c1f110ef3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -69376,12 +69924,32 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359487979061573615, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8320752707962218979, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430010530159637854, guid: e509f58aa04d7514dac90d168fb4a099,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -70404,7 +70972,7 @@ SceneRoots:
   - {fileID: 722699737}
   - {fileID: 1620505838}
   - {fileID: 1823838595}
-  - {fileID: 358587200}
+  - {fileID: 811820736}
   - {fileID: 1234001851}
   - {fileID: 1238765751}
   - {fileID: 1580703209}

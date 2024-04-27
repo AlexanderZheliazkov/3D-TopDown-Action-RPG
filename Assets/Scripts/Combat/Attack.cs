@@ -8,9 +8,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New attack", menuName = "ScriptableObjects/Attack")]
 public class Attack
 {
-    public float AttackProjectileSpawnDelay { get { return attackProjectileSpawnDelay; } private set { } }
+    public float AttackProjectileSpawnDelay
+    {
+        get { return attackProjectileSpawnDelay; }
+        private set { }
+    }
 
     public AnimationClip AttackAnimation;
+    public float AnimationSpeedModifier = 1;
     public LayerMask TargetMask;
 
     [SerializeField]

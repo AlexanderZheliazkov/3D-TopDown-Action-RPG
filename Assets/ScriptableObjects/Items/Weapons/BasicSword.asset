@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d79c7984ea0e741b1552907705b01c, type: 3}
+  m_Name: BasicSword
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Description: 
+  HealthModifier: 0
+  DefenceModifier: 0
+  DamageModifier: 0
+  SpeedModifier: 0
+  MovementAnimations: {fileID: 11400000, guid: 31cb78ee7a717794b9db28666a8c57d9, type: 2}
+  Attacks:
+  - AttackAnimation: {fileID: -5846550873099734776, guid: 544e5299d8e55a5429af842511fccc61,
+      type: 3}
+    AnimationSpeedModifier: 1
+    TargetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    projectiles:
+    - {fileID: 3913559466206057468, guid: 2aff52c8e56edc94682edbfd2be75c48, type: 3}
+    damageModifier: 1
+    AttackDurationTime: 0.4
+    FreezeMovementTime: 0.42
+    AttackComboResetTime: 1
+    attackProjectileSpawnDelay: 0.2
+  - AttackAnimation: {fileID: 330443113301687301, guid: 544e5299d8e55a5429af842511fccc61,
+      type: 3}
+    AnimationSpeedModifier: 1
+    TargetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    projectiles:
+    - {fileID: 3913559466206057468, guid: 2aff52c8e56edc94682edbfd2be75c48, type: 3}
+    damageModifier: 1
+    AttackDurationTime: 0.4
+    FreezeMovementTime: 0.42
+    AttackComboResetTime: 1
+    attackProjectileSpawnDelay: 0.15
+  - AttackAnimation: {fileID: 2295770228273748645, guid: 544e5299d8e55a5429af842511fccc61,
+      type: 3}
+    AnimationSpeedModifier: 1
+    TargetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    projectiles:
+    - {fileID: 3913559466206057468, guid: 6554d020e52cd5c42bf4e739c833ce2a, type: 3}
+    damageModifier: 1
+    AttackDurationTime: 0.8
+    FreezeMovementTime: 0.6
+    AttackComboResetTime: 1
+    attackProjectileSpawnDelay: 0.4
+  RightHandPrefab: {fileID: 5347381747904848743, guid: 63cf683a67d6a8643875ad4be511148c,
+    type: 3}
+  LeftHandPrefab: {fileID: 0}
