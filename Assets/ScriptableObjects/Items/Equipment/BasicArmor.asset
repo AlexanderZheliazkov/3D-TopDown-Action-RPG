@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5779c334115f177449c860f69abe9b2b, type: 3}
+  m_Name: BasicArmor
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Description: 
+  HealthModifier: 0
+  DefenceModifier: 0
+  DamageModifier: 0
+  SpeedModifier: 0
+  skinnedMeshRenderers:
+  - {fileID: 8480138032405525601, guid: 0f377e067696c704cbbd50ec8f1943f3, type: 3}
+  - {fileID: 3517009018857450909, guid: f532ce648eb70f24686684d71b1c331e, type: 3}
+  - {fileID: 4061835404913157906, guid: 088ebe44dce2407428f3f3db939c38e5, type: 3}
+  - {fileID: 6774603592353559820, guid: 8491e8a25108da148b201a47bb85b933, type: 3}
+  - {fileID: 5675418997567874332, guid: 527e52e1e6902544fb82a0e095ef0f5f, type: 3}
+  - {fileID: 5132370229162432779, guid: 2c2693ba583b46f46b67286a159945aa, type: 3}
+  - {fileID: 6462177779753837908, guid: 229590b6d02934f43bc3b4f716b7af32, type: 3}
+  - {fileID: 2661216664951009278, guid: 3818c0e9daf6c004abd3f4d323e81052, type: 3}
+  - {fileID: 35463642392254082, guid: 425eb713cfac1f544a4573b4a0a9f7fb, type: 3}

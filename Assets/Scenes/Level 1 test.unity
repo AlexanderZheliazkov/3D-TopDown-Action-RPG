@@ -27049,6 +27049,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3932624613994372841, guid: bc75eda85ed910a468e02dd26338fa31,
+        type: 3}
+      propertyPath: HealthRegen.baseValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4462352784216365693, guid: bc75eda85ed910a468e02dd26338fa31,
         type: 3}
       propertyPath: targetIndicator

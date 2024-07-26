@@ -8,19 +8,17 @@ using UnityEngine.Events;
 public class CharacterStats : MonoBehaviour
 {
     public Stat MaxHealth;
-    public int CurrentHealth { get; private set; }
+    public float CurrentHealth { get; private set; }
     public Stat Defence;
     public Stat Damage;
     public Stat DamageAmplitudePercent;
+    public Stat HealthRegen;
+    public Stat LifeSteal;
 
     public UnityEvent<int> OnDamageTaken;
     public UnityEvent<float> OnHealthPercentChanged;
     public UnityEvent OnCharacterDied;
 
-    private void Start()
-    {
-        CurrentHealth = MaxHealth.GetValue();
-    }
 
     /// <summary>
     /// Returns the damage dealt
@@ -32,6 +30,9 @@ public class CharacterStats : MonoBehaviour
     {
         float dmgAplitudeValue = UnityEngine.Random.Range(1 - (float)DamageAmplitudePercent.GetValue() / 100, 1 + (float)DamageAmplitudePercent.GetValue() / 100);
         int damageAmount = Mathf.RoundToInt(Damage.GetValue() * _damageModifier * dmgAplitudeValue);
+
+        Heal(damageAmount * LifeSteal.GetValue());
+
         return _victimStats.TakeDamage(damageAmount);
     }
 
@@ -53,5 +54,30 @@ public class CharacterStats : MonoBehaviour
             OnCharacterDied?.Invoke();
         }
         return _amount;
+    }
+
+    public void Heal(float _amount)
+    {
+        CurrentHealth += _amount;
+        if (CurrentHealth >= MaxHealth.GetValue())
+        {
+            CurrentHealth = MaxHealth.GetValue();
+        }
+        OnHealthPercentChanged?.Invoke((float)CurrentHealth / (float)MaxHealth.GetValue());
+    }
+
+    private void Start()
+    {
+        CurrentHealth = MaxHealth.GetValue();
+    }
+
+    private void FixedUpdate()
+    {
+        //Only for fun. TO BE CHANGED!
+        if (CurrentHealth <= MaxHealth.GetValue())
+        {
+            CurrentHealth += HealthRegen.GetValue() * Time.deltaTime;
+            OnHealthPercentChanged?.Invoke((float)CurrentHealth / (float)MaxHealth.GetValue());
+        }
     }
 }

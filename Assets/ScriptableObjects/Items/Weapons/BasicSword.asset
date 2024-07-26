@@ -32,7 +32,7 @@ MonoBehaviour:
     AttackDurationTime: 0.4
     FreezeMovementTime: 0.42
     AttackComboResetTime: 1
-    attackProjectileSpawnDelay: 0.2
+    attackProjectileSpawnDelay: 0.15
   - AttackAnimation: {fileID: 330443113301687301, guid: 544e5299d8e55a5429af842511fccc61,
       type: 3}
     AnimationSpeedModifier: 1
@@ -40,12 +40,12 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 128
     projectiles:
-    - {fileID: 3913559466206057468, guid: 2aff52c8e56edc94682edbfd2be75c48, type: 3}
+    - {fileID: 3913559466206057468, guid: a64d49db57fec9f4081840e064f0c117, type: 3}
     damageModifier: 1
-    AttackDurationTime: 0.4
-    FreezeMovementTime: 0.42
+    AttackDurationTime: 0.2
+    FreezeMovementTime: 0.22
     AttackComboResetTime: 1
-    attackProjectileSpawnDelay: 0.15
+    attackProjectileSpawnDelay: 0.05
   - AttackAnimation: {fileID: 2295770228273748645, guid: 544e5299d8e55a5429af842511fccc61,
       type: 3}
     AnimationSpeedModifier: 1
@@ -59,6 +59,6 @@ MonoBehaviour:
     FreezeMovementTime: 0.6
     AttackComboResetTime: 1
     attackProjectileSpawnDelay: 0.4
-  RightHandPrefab: {fileID: 5347381747904848743, guid: 63cf683a67d6a8643875ad4be511148c,
+  RightHandPrefab: {fileID: 3885902232845938940, guid: 14a92ad276bf73142bff48d057396212,
     type: 3}
   LeftHandPrefab: {fileID: 0}
